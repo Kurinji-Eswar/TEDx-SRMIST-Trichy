@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers | TEDx SRMIST Trichy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Ensure modal is hidden by default */
+    .modal {
+      display: none; /* hide until triggered */
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #111;
+      border: 2px solid #ff2b06;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 90%;
+      padding: 20px;
+      color: #fff;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 15px; right: 20px;
+      font-size: 24px;
+      color: #ff2b06;
+      cursor: pointer;
+    }
+    .modal-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .modal-img-wrap img {
+      max-width: 250px;
+      border-radius: 8px;
+    }
+    .modal-text {
+      flex: 1;
+    }
+    .modal-btn {
+      display: inline-block;
+      background: #ff2b06;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/images/tedx-logo.png" alt="TEDx Logo" class="logo-img">
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="speakers.html" class="active">Speakers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="book.html" class="book-btn">Registrations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <h1>Our Speakers</h1>
+    <p>Discover the brilliant minds who shared their ideas worth spreading.</p>
+  </section>
+
+  <!-- Speakers Section -->
+  <section class="speakers-page">
+    <!-- Year Tabs -->
+    <div class="year-tabs">
+      <button class="tab active" data-year="2025">2025</button>
+      <button class="tab disabled" data-year="2026">2026</button>
+      <button class="tab disabled" data-year="2027">2027</button>
+      <button class="tab disabled" data-year="2028">2028</button>
+      <button class="tab disabled" data-year="2029">2029</button>
+    </div>
+
+    <!-- Speakers Grid -->
+    <div class="speakers-grid">
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker1.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker2.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker1.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker2.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker1.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker2.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker1.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker2.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+        <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker1.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+      <div class="speaker-card"
+           data-name="Dr. Peter"
+           data-role="AI Researcher"
+           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
+           data-talk="AI and Humanity: The Future Ahead"
+           data-link="https://youtube.com/watch?v=xxxxx"
+           data-img="assets/images/speaker2.jpg"
+           data-year="2025">
+        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
+        <div class="overlay">
+          <h3>Dr. Peter</h3>
+          <p>AI Researcher</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="speakerModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body">
+        <!-- Left: Speaker Image -->
+        <div class="modal-img-wrap">
+          <img id="modalImg" src="" alt="Speaker">
+        </div>
+        <!-- Right: Speaker Info -->
+        <div class="modal-text">
+          <h4 class="modal-about">ABOUT</h4>
+          <h3 id="modalName"></h3>
+          <p class="modal-role" id="modalRole"></p>
+          <p class="modal-bio" id="modalBio"></p>
+          <p><strong>Spoke on:</strong> <em id="modalTalk"></em></p>
+          <a id="modalLink" href="#" target="_blank" class="modal-btn">Watch Talk on YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

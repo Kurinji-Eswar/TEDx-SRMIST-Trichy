@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEDx SRM IST Trichy | About</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Make particles cover full page */
+    .about-hero {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;      /* full viewport */
+      min-height: 100%;
+      z-index: -1;       /* stay behind content */
+      pointer-events: none; /* allow clicks on content */
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    /* Box for About content */
+    .about-section {
+      position: relative;
+      z-index: 2;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .about-box {
+      background: rgba(10, 10, 25, 0.95); /* navy-black */
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      color: #eee;
+    }
+
+    .about-heading {
+      text-align: center;
+      margin-top: 120px;
+      color: #fff;
+      font-size: 2.5rem;
+      z-index: 2;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles Background (fixed to this page) -->
+  <section id="particles-about" class="about-hero">
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="assets/images/tedx-logo.png" alt="TEDx Logo" class="logo-img">
+      </div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="book.html" class="book-btn">Registrations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Heading -->
+  <h1 class="about-heading">The World of TED</h1>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-box">
+      <!-- Tabs -->
+      <div class="about-tabs">
+        <div class="tab active" data-target="about-ted">TED</div>
+        <div class="tab" data-target="about-tedx">TEDx</div>
+        <div class="tab" data-target="about-srm">TEDx SRMIST Trichy</div>
+      </div>
+
+      <!-- Tab Contents -->
+      <div class="tab-content active" id="about-ted">
+        <p>TED, founded in 1984, is a global community dedicated to sharing "ideas worth spreading." 
+        Owned by a nonprofit foundation, TED aims to make great ideas accessible and spark meaningful conversations. 
+        Through its TEDx program, local communities and organizations can host TED-like events to foster connection and dialogue.</p>
+      </div>
+
+      <div class="tab-content" id="about-tedx">
+        <p>TEDx is a grassroots initiative created in the spirit of TED’s overall mission to research 
+        and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities 
+        around the globe through TEDx events.</p>
+      </div>
+
+      <div class="tab-content" id="about-srm">
+        <h2>Vision</h2>
+        <p>
+          To cultivate a dynamic platform at SRM Institute of Science and Technology where ideas ignite change, voices inspire progress, and diverse perspectives shape a better future—empowering individuals to think deeply, act boldly, and innovate responsibly.
+        </p>
+
+        <h2>Mission</h2>
+        <p>
+          Our mission is to amplify powerful ideas by organizing thought-provoking TED-style events that bring together students, faculty, alumni, and changemakers from all walks of life. We aim to foster a culture of intellectual curiosity, creativity, and social responsibility by:
+        </p>
+        <ul>
+          <li>Showcasing transformative stories and groundbreaking research</li>
+          <li>Encouraging interdisciplinary dialogue and critical thinking</li>
+          <li>Inspiring the SRM community to drive positive change locally and globally</li>
+        </ul>
+        <p>
+          Through these efforts, we seek to contribute meaningfully to the global TEDx movement while reflecting the academic excellence and innovation ethos of SRM Institute of Science and Technology.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
