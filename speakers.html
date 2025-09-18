@@ -3,63 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speakers | TEDx SRMIST Trichy</title>
+  <title>TEDx SRM IST Trichy</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Ensure modal is hidden by default */
-    .modal {
-      display: none; /* hide until triggered */
-      position: fixed;
-      z-index: 1000;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.8);
-      justify-content: center;
-      align-items: center;
-    }
-    .modal-content {
-      background: #111;
-      border: 2px solid #ff2b06;
-      border-radius: 10px;
-      max-width: 800px;
-      width: 90%;
-      padding: 20px;
-      color: #fff;
-      position: relative;
-    }
-    .modal-close {
-      position: absolute;
-      top: 15px; right: 20px;
-      font-size: 24px;
-      color: #ff2b06;
-      cursor: pointer;
-    }
-    .modal-body {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .modal-img-wrap img {
-      max-width: 250px;
-      border-radius: 8px;
-    }
-    .modal-text {
-      flex: 1;
-    }
-    .modal-btn {
-      display: inline-block;
-      background: #ff2b06;
-      color: #fff;
-      padding: 10px 15px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo-container">
@@ -71,223 +20,99 @@
         <span></span>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="speakers.html" class="active">Speakers</a></li>
+        <li><a href="speakers.html">Speakers</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="team.html">Team</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="book.html" class="book-btn">Registrations</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="page-hero">
-    <h1>Our Speakers</h1>
-    <p>Discover the brilliant minds who shared their ideas worth spreading.</p>
-  </section>
-
-  <!-- Speakers Section -->
-  <section class="speakers-page">
-    <!-- Year Tabs -->
-    <div class="year-tabs">
-      <button class="tab active" data-year="2025">2025</button>
-      <button class="tab disabled" data-year="2026">2026</button>
-      <button class="tab disabled" data-year="2027">2027</button>
-      <button class="tab disabled" data-year="2028">2028</button>
-      <button class="tab disabled" data-year="2029">2029</button>
-    </div>
-
-    <!-- Speakers Grid -->
-    <div class="speakers-grid">
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker1.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker2.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker1.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker2.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker1.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker2.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker1.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker2.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-        <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker1.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker1.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
-      <div class="speaker-card"
-           data-name="Dr. Peter"
-           data-role="AI Researcher"
-           data-bio="Dr. Peter is a pioneer in Artificial Intelligence..."
-           data-talk="AI and Humanity: The Future Ahead"
-           data-link="https://youtube.com/watch?v=xxxxx"
-           data-img="assets/images/speaker2.jpg"
-           data-year="2025">
-        <img src="assets/images/speaker2.jpg" alt="Dr. Peter">
-        <div class="overlay">
-          <h3>Dr. Peter</h3>
-          <p>AI Researcher</p>
-          <button class="know-more">Know More</button>
-        </div>
-      </div>
-
+  <!-- HERO WITH PARTICLES -->
+  <section class="hero">
+    <div id="particles-hero"></div>
+    <div class="hero-content">
+      <h1><span>TEDx</span> SRMIST Trichy</h1>
+      <p>Ideas worth spreading | Inspiring the future</p>
+      <a href="book.html" class="cta-btn">Register Here</a>
     </div>
   </section>
 
-  <!-- Modal -->
-  <div id="speakerModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close">&times;</span>
-      <div class="modal-body">
-        <!-- Left: Speaker Image -->
-        <div class="modal-img-wrap">
-          <img id="modalImg" src="" alt="Speaker">
-        </div>
-        <!-- Right: Speaker Info -->
-        <div class="modal-text">
-          <h4 class="modal-about">ABOUT</h4>
-          <h3 id="modalName"></h3>
-          <p class="modal-role" id="modalRole"></p>
-          <p class="modal-bio" id="modalBio"></p>
-          <p><strong>Spoke on:</strong> <em id="modalTalk"></em></p>
-          <a id="modalLink" href="#" target="_blank" class="modal-btn">Watch Talk on YouTube</a>
+  <!-- THEME SECTION -->
+  <section class="theme">
+    <div class="theme-container">
+      <!-- Left: Theme Logo -->
+      <div class="theme-logo">
+        <img src="assets/images/sankalp.png" alt="Sankalp Theme Logo">
+      </div>
+
+      <!-- Right: Theme Content -->
+      <div class="theme-content">
+        <h2>Sankalp – "A Cosmic Resolution"</h2>
+        <p>
+          We’re thrilled to introduce TEDxSRMIST Trichy—a student-led, independently organized TEDx event.
+          Rooted in the ancient wisdom of intention and aligned with the boundless potential of the cosmos, 
+          Sankalp reflects a commitment that reaches beyond the self. Through compelling talks by students, 
+          faculty, and visionary minds, we aim to spark not just ideas—but purposeful resolutions that resonate on a universal scale. 
+          This is more than an event—it’s a call to align inner purpose with collective progress. 
+          Together, we pledge to push boundaries, drive meaningful change, and shape a future guided by intention, innovation, and cosmic responsibility.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <section class="footer-section">
+    <div id="particles-footer"></div>
+
+    <div class="footer-content">
+      <!-- Left: Branding / Call-to-action -->
+      <div class="footer-left">
+        <img src="assets/images/tedx-logo.png" alt="TEDx SRM IST Trichy" class="footer-logo">
+        <p>BOOKINGS OPEN<br><strong>LIMITED SEATS !</strong></p>
+        <a href="book.html" class="footer-cta">Book Now</a>
+      </div>
+
+      <!-- Center: Navigation -->
+      <div class="footer-center">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="speakers.html">Speakers</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-center">
+        <h4>Legals</h4>
+        <ul>
+          <li><a href="https://www.ted.com/about/our-organization/our-policies-terms/ted-com-terms-of-use">Terms of Service</a></li>
+          <li><a href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy">Privacy Policy</a></li>
+          <li><a href="book.html">Licensing</a></li>
+        </ul>
+      </div>
+
+      <!-- Right: Socials -->
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/tedxsrmist.trichy"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="assets/images/linkedin.svg" alt="Linkedin"></a>
+          <a href="#"><img src="assets/images/x.svg" alt="Twitter"></a>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 TEDx SRMIST Trichy | All Rights Reserved</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
