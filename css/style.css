@@ -215,25 +215,42 @@ header {
 /* Page hero */
 .page-hero {
   background: url("../assets/images/speakers-bg.jpg") center/cover no-repeat;
-  height: 40vh;
+  min-height: 45vh; /* increased so heading doesn’t overlap navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fff;
   text-align: center;
+  position: relative;
+  padding: 80px 20px 40px; /* top padding to push below navbar */
+  color: #fff;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+  z-index: 1;
 }
 .page-hero h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  font-size: 3rem;
+  font-weight: 800;
   text-transform: uppercase;
-  font-family: 'Moot Jungle', sans-serif; /* 🔥 Our Speaker in Moot Jungle */
+  font-family: 'Moot Jungle', sans-serif; /* 🔥 Our Speakers */
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 .page-hero p {
+  position: relative;
+  z-index: 2;
   font-size: 1.1rem;
-  margin-top: 10px;
-  color: #ccc;
-  font-family: 'Calgray', serif; /* 🔥 Subtitle text in Calgray */
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ddd;
+  font-family: 'Calgray', serif; /* 🔥 Subtitle text */
+  line-height: 1.6;
 }
 
 /* Year tabs (filtering controls) */
@@ -243,6 +260,7 @@ header {
   background: transparent;
   border-bottom: 1px solid #222;
   padding: 12px 0;
+  gap: 20px;
 }
 .year-tabs .tab {
   background: transparent;
@@ -250,7 +268,6 @@ header {
   color: #bbb;
   font-size: 1rem;
   font-weight: 600;
-  margin: 0 14px;
   cursor: pointer;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
@@ -289,7 +306,7 @@ header {
   overflow: hidden;
   text-align: center;
   width: 100%;
-  max-width: 200px;
+  max-width: 220px;
   transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
   filter: grayscale(100%) brightness(0.8);
   cursor: pointer;
@@ -297,7 +314,7 @@ header {
 }
 .speaker-card img {
   width: 100%;
-  height: 220px;
+  height: 240px;
   object-fit: cover;
   border-radius: 6px;
   display: block;
@@ -480,6 +497,12 @@ header {
   }
 }
 @media (max-width: 768px) {
+  .page-hero {
+    padding-top: 100px; /* push down heading below navbar */
+  }
+  .page-hero h1 {
+    font-size: 2.2rem;
+  }
   .speakers-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -498,8 +521,15 @@ header {
   }
 }
 @media (max-width: 480px) {
+  .page-hero {
+    min-height: 50vh;
+    padding-top: 120px; /* more safe space for mobile navbar */
+  }
+  .page-hero h1 {
+    font-size: 1.9rem;
+  }
   .speakers-grid {
-    grid-template-columns: repeat(2, 1fr); /* force 2 instead of 1 */
+    grid-template-columns: repeat(2, 1fr);
   }
   .modal-img-wrap img {
     width: 100%;
