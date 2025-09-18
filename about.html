@@ -6,56 +6,10 @@
   <title>TEDx SRM IST Trichy | About</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    /* Make particles cover full page */
-    .about-hero {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;      /* full viewport */
-      min-height: 100%;
-      z-index: -1;       /* stay behind content */
-      pointer-events: none; /* allow clicks on content */
-    }
-
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-    }
-
-    /* Box for About content */
-    .about-section {
-      position: relative;
-      z-index: 2;
-      padding: 60px 20px;
-      display: flex;
-      justify-content: center;
-    }
-    .about-box {
-      background: rgba(10, 10, 25, 0.95); /* navy-black */
-      padding: 40px;
-      border-radius: 12px;
-      max-width: 1000px;
-      width: 100%;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-      color: #eee;
-    }
-
-    .about-heading {
-      text-align: center;
-      margin-top: 120px;
-      color: #fff;
-      font-size: 2.5rem;
-      z-index: 2;
-      position: relative;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Particles Background (fixed to this page) -->
+  <!-- Particles Background -->
   <section id="particles-about" class="about-hero">
     <div class="hero-overlay"></div>
   </section>
@@ -89,45 +43,109 @@
   <!-- About Section -->
   <section class="about-section">
     <div class="about-box">
+
       <!-- Tabs -->
       <div class="about-tabs">
-        <div class="tab active" data-target="about-ted">TED</div>
-        <div class="tab" data-target="about-tedx">TEDx</div>
+        <div class="tab active" data-target="about-ted">About TED</div>
+        <div class="tab" data-target="about-tedx">About TEDx</div>
         <div class="tab" data-target="about-srm">TEDx SRMIST Trichy</div>
       </div>
 
-      <!-- Tab Contents -->
+      <!-- Tab Content: TED -->
       <div class="tab-content active" id="about-ted">
-        <p>TED, founded in 1984, is a global community dedicated to sharing "ideas worth spreading." 
-        Owned by a nonprofit foundation, TED aims to make great ideas accessible and spark meaningful conversations. 
-        Through its TEDx program, local communities and organizations can host TED-like events to foster connection and dialogue.</p>
+        <p>
+          TED is on a mission to discover and spread ideas that spark imagination,
+          embrace possibility and catalyze impact. Our organization is devoted to
+          curiosity, reason, wonder and the pursuit of knowledge — without an agenda.
+          We welcome people from every discipline and culture who seek a deeper
+          understanding of the world and connection with others, and we invite
+          everyone to engage with ideas and activate them in your community. 
+          
+          <br><br>
+
+          TED began in 1984 as a conference where Technology, Entertainment and
+          Design converged, but today it spans a multitude of worldwide communities
+          and initiatives exploring everything from science and business to education,
+          arts and global issues. In addition to the hundreds of TED Talks curated
+          from our annual conferences and published on TED.com, we produce original
+          podcasts, short video series,
+          <a href="https://ed.ted.com" target="_blank">animated educational lessons (TED-Ed)</a>
+          and TV programs that are translated into more than 100 languages and
+          distributed via partnerships around the world. Each year, more than 3,000
+          independently run
+          <a href="https://www.ted.com/tedx/events" target="_blank">TEDx events</a>
+          bring people together to share ideas and bridge divides in communities on
+          every continent. Through the Audacious Project, TED has helped catalyze
+          more than $3 billion in funding for projects that seek to make the world
+          more beautiful, sustainable and just. In 2020, TED launched Countdown,
+          an initiative to accelerate solutions to the climate crisis and mobilize
+          a movement for a net-zero future. View a full list of
+          <a href="https://www.ted.com/about/programs-initiatives" target="_blank">
+            TED’s many programs and initiatives
+          </a>.
+
+          <br><br>
+
+          TED is owned by a nonprofit, nonpartisan foundation.
+          Our aim is to help create a future worth pursuing for all.
+
+        <br><br>
+
+          Follow TED on
+          <a href="https://x.com/TEDTalks" target="_blank">Twitter</a>,
+          <a href="https://www.facebook.com/TED" target="_blank">Facebook</a>,
+          <a href="https://www.instagram.com/ted" target="_blank">Instagram</a>,
+          and on
+          <a href="https://www.linkedin.com/company/ted-conferences" target="_blank">LinkedIn</a>.
+        </p>
       </div>
 
+      <!-- Tab Content: TEDx -->
       <div class="tab-content" id="about-tedx">
-        <p>TEDx is a grassroots initiative created in the spirit of TED’s overall mission to research 
-        and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities 
-        around the globe through TEDx events.</p>
+        <h3>x = independently organized event</h3>
+        <p>
+          in the spirit of ideas worth spreading, TEDx is a program of local,
+          self-organized events that bring people together to share a TED-like
+          experience. At a TEDx event, TED Talks video and live speakers combine
+          to spark deep discussion and connection. These local, self-organized
+          events are branded TEDx, where x = independently organized TED event.
+          The TED Conference provides general guidance for the TEDx program, but
+          individual TEDx events are self-organized.
+          (Subject to certain rules and regulations.)
+        </p>
       </div>
 
+      <!-- Tab Content: SRMIST -->
       <div class="tab-content" id="about-srm">
         <h2>Vision</h2>
         <p>
-          To cultivate a dynamic platform at SRM Institute of Science and Technology where ideas ignite change, voices inspire progress, and diverse perspectives shape a better future—empowering individuals to think deeply, act boldly, and innovate responsibly.
+          To cultivate a dynamic platform at SRM Institute of Science and Technology
+          where ideas ignite change, voices inspire progress, and diverse perspectives
+          shape a better future—empowering individuals to think deeply, act boldly,
+          and innovate responsibly.
         </p>
 
         <h2>Mission</h2>
         <p>
-          Our mission is to amplify powerful ideas by organizing thought-provoking TED-style events that bring together students, faculty, alumni, and changemakers from all walks of life. We aim to foster a culture of intellectual curiosity, creativity, and social responsibility by:
+          Our mission is to amplify powerful ideas by organizing thought-provoking
+          TED-style events that bring together students, faculty, alumni, and
+          changemakers from all walks of life. We aim to foster a culture of
+          intellectual curiosity, creativity, and social responsibility by:
         </p>
+
         <ul>
           <li>Showcasing transformative stories and groundbreaking research</li>
           <li>Encouraging interdisciplinary dialogue and critical thinking</li>
           <li>Inspiring the SRM community to drive positive change locally and globally</li>
         </ul>
+
         <p>
-          Through these efforts, we seek to contribute meaningfully to the global TEDx movement while reflecting the academic excellence and innovation ethos of SRM Institute of Science and Technology.
+          Through these efforts, we seek to contribute meaningfully to the global
+          TEDx movement while reflecting the academic excellence and innovation ethos
+          of SRM Institute of Science and Technology.
         </p>
       </div>
+
     </div>
   </section>
 
