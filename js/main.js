@@ -386,4 +386,33 @@ document.addEventListener('DOMContentLoaded', () => {
     eventStrip.innerHTML += clone; // duplicate for infinite loop
   }
 
+  // -------------------------------
+  // 13) Contact Page Snowfall Effect
+  // -------------------------------
+  if (window.particlesJS && document.getElementById("particles-contact")) {
+    particlesJS("particles-contact", {
+      particles: {
+        number: { value: 150, density: { enable: true, value_area: 1000 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.8, random: true },
+        size: { value: 3, random: true },
+        move: {
+          enable: true,
+          speed: 1.2,
+          direction: "bottom",
+          random: true,
+          straight: false,
+          out_mode: "out"
+        },
+        line_linked: { enable: false }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: false }, onclick: { enable: false } }
+      },
+      retina_detect: true
+    });
+  }
+
 }); // End DOMContentLoaded
